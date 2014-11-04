@@ -6,6 +6,7 @@ public class MuestraResultados {
         System.out.println("    Aleatorio Tiempo(s)");
         DatosEstadisticos estadisticas = new DatosEstadisticos();
         int[] v;
+
         for (int i = 1000; i <= 32000; i = i*2) {
             
             new Ordenar1Vector().ordena(GeneraCaso.generaVector(i, false), estadisticas);

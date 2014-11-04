@@ -1,6 +1,6 @@
 
 public class GeneraCaso {
-
+    // true = random, false = inverso
     public static int[] generaVector(int tamaño, boolean modo) {
         int[] res = new int[tamaño];
         if (modo) {

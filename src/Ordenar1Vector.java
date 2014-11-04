@@ -8,7 +8,7 @@ public class Ordenar1Vector implements OrdenarVector {
 
     @Override
     public void ordena(int[] vector, DatosEstadisticos de) {
-        de.estableceTiempo(System.currentTimeMillis());
+        float tiempo = System.currentTimeMillis();
         
         for (int i = 0; i < vector.length - 1; i++) {
             for (int j = i; j < vector.length; j++) {
@@ -22,7 +22,7 @@ public class Ordenar1Vector implements OrdenarVector {
             }
         }
         
-        de.estableceTiempo(System.currentTimeMillis() - de.dameTiempo() +2800);
+        de.añadeTiempo(System.currentTimeMillis() - tiempo);
     }
     
 }
