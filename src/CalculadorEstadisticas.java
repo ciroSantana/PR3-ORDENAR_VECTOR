@@ -8,7 +8,7 @@ public class CalculadorEstadisticas {
         
         metodo.ordena(GeneraCaso.generaVector(tam_vector, false), vector[0]);
         
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 10; i++) {
             metodo.ordena(GeneraCaso.generaVector(tam_vector, true), vector[1]);
         
         }
