@@ -24,7 +24,7 @@ public class MuestraResultados {
         }, v);
 
         for (int i = 0; i < test.length; i++) {
-            System.out.printf("%6d            %5.2f", i, test[i][0].dameTiempo());
+            System.out.printf("%6d            %5.2f", v[i], test[i][0].dameTiempo());
             System.out.printf("           %5.2f\n", test[i][1].dameTiempo());
         }
 
