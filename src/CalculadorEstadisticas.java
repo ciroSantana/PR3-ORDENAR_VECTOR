@@ -4,15 +4,20 @@ public class CalculadorEstadisticas {
     private DatosEstadisticos[][] matriz;
     
     public DatosEstadisticos[] estadisticaOrdenaVector(OrdenarVector metodo, int  tam_vector) {
-        vector = new DatosEstadisticos[6];
+        vector = new DatosEstadisticos[2];
+        vector[0] = new DatosEstadisticos();
+        vector[1] = new DatosEstadisticos();
         
         metodo.ordena(GeneraCaso.generaVector(tam_vector, false), vector[0]);
+        float acumulador = 0;
         
         for (int i = 0; i < 10; i++) {
             metodo.ordena(GeneraCaso.generaVector(tam_vector, true), vector[1]);
+            
+            acumulador += vector[1].dameTiempo();
         
         }
-        vector[1].estableceTiempo(vector[1].dameTiempo()/10);
+        vector[1].estableceTiempo(acumulador/10);
         
         return vector;
     }
